@@ -1,1 +1,199 @@
-<html><body><h1>Erro na geração do site</h1></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usinagem E Caldeiraria Mascote | Especialistas Industriais</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-deep: #050505;
+            --bg-card: rgba(20, 20, 20, 0.8);
+            --accent: #3b82f6; /* Azul Industrial */
+            --accent-hover: #2563eb;
+            --text-main: #f0f0f0;
+            --text-muted: #94a3b8;
+            --border: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3, .brand {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Navbar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 5%;
+            background: rgba(5, 5, 5, 0.95);
+            border-bottom: 1px solid var(--border);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+
+        .brand {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .brand span { color: var(--accent); }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 5%;
+            background: linear-gradient(rgba(5,5,5,0.8), rgba(5,5,5,0.9)), url('https://images.unsplash.com/photo-1565514020179-026b92b2d716?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') center/cover;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            max-width: 600px;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            font-family: 'Orbitron', sans-serif;
+            font-weight: 700;
+            border: 1px solid var(--accent);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .btn:hover {
+            background: transparent;
+            color: var(--accent);
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
+        }
+
+        /* Seção Dados Técnicos */
+        .tech-data {
+            padding: 5rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+        
+        .card h3 { color: var(--accent); margin-bottom: 1rem; font-size: 1.1rem; }
+        
+        .card p { color: var(--text-muted); font-size: 0.95rem; }
+
+        /* Mapa e Contato */
+        .location {
+            padding: 5rem 5%;
+            background: #0a0a0a;
+            border-top: 1px solid var(--border);
+        }
+
+        .location h2 { margin-bottom: 2rem; text-align: center; }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            border: 1px solid var(--border);
+            filter: grayscale(100%) invert(90%) contrast(120%);
+        }
+
+        /* Footer */
+        footer {
+            padding: 2rem 5%;
+            text-align: center;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="brand">Usinagem E Caldeiraria Mascote</div>
+        <a href="#contato" class="btn" style="padding: 0.5rem 1rem; font-size: 0.8rem;">Falar no WhatsApp</a>
+    </nav>
+
+    <header class="hero">
+        <h1>Força &<br><span>Precisão.</span></h1>
+        <p>Especialistas em Metalúrgica atuando com alto rigor técnico em Mogi Guaçu. Reconhecidos pela excelência (5,0 Estrelas).</p>
+        <div>
+            <a href="#contato" class="btn">Solicitar Orçamento Técnico</a>
+        </div>
+    </header>
+
+    <section class="tech-data">
+        <div class="card">
+            <h3>01. Inteligência Operacional</h3>
+            <p>Atuamos no setor de Metalúrgica com processos otimizados para garantir o mais alto nível de entrega e conformidade. </p>
+        </div>
+        <div class="card">
+            <h3>02. Endereço Registrado</h3>
+            <p>Localização sob consulta.</p>
+        </div>
+        <div class="card">
+            <h3>03. Contato Oficial</h3>
+            <p>Contato via WhatsApp</p>
+        </div>
+    </section>
+
+    <section class="location" id="contato">
+        <h2>Localização Estratégica</h2>
+        <iframe 
+            class="map-container"
+            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBi1MNt5djOSQYEMDltt-aFRoA2UuRrlzk&q=place_id:" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <footer>
+        <p>Arquitetura Digital por XTAL Group - Soluções Forenses Industriais</p>
+    </footer>
+
+</body>
+</html>
